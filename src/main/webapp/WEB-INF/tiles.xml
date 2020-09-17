@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="template.index" template="/WEB-INF/jsp/template/template.jsp">
+    		<put-attribute name="title"    value="::: PIB Santa Lúcia :::"/>
+        <put-attribute name="topo"     value="/WEB-INF/jsp/template/topo.jsp"/>
+        <put-attribute name="menu" 	  value="/WEB-INF/jsp/template/menu.jsp"/>
+        <put-attribute name="mensagem" value="/WEB-INF/jsp/template/mensagem.jsp"/>
+        <put-attribute name="conteudo" value="/WEB-INF/jsp/template/conteudo.jsp"/>
+        <put-attribute name="rodape"   value="/WEB-INF/jsp/template/rodape.jsp"/>
+    </definition>
+    
+	<!-- Erro -->
+	<definition name="error.tiles" extends="template.index">
+        <put-attribute name="title" 		value="::: ERRO GRAVE :::"/>
+        <put-attribute name="titlepanel"	value="Erro Grave"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/erro.jsp"/>
+    </definition>	
+    
+    <!-- Home -->
+    <definition name="home.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Gráfico de Membros"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/home.jsp"/>
+    </definition>
+    
+     <!-- Congregado Menutenção -->
+    <definition name="congregado.manutencao.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Cadastro Congregado"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoCadastro.jsp"/>
+    </definition>
+    
+	<!-- Congregado Pesquisa -->
+    <definition name="congregado.pesquisa.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Pesquisa"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoPesquisa.jsp"/>
+    </definition>   
+    
+	<!-- Congregado Óbito -->
+    <definition name="congregado.obito.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Óbito"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoObito.jsp"/>
+    </definition>
+    
+	<!-- Congregado Desligamento -->
+    <definition name="congregado.desligamento.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Desligamento"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoDesligamento.jsp"/>
+    </definition>   
+    
+	<!-- Congregado Reconciliação -->
+    <definition name="congregado.reconciliacao.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Reconciliação"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoReconciliacao.jsp"/>
+    </definition>   
+    
+    	<!-- Congregado Transferência -->
+    <definition name="congregado.transferencia.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Transferência"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/congregado/congregadoTransferencia.jsp"/>
+    </definition>       
+    
+     <!-- Usuário Menutenção -->
+    <definition name="usuario.manutencao.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Cadastro Usuário"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/usuario/usuarioCadastro.jsp"/>
+    </definition>
+    
+	<!-- Usuário Pesquisa -->
+    <definition name="usuario.pesquisa.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Pesquisa Usuário"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/usuario/usuarioPesquisa.jsp"/>
+    </definition>   
+    
+     <!-- Pastoral -->
+    <definition name="pastoral.cadastro.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Pastoral"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/pastoral/pastoralCadastro.jsp"/>
+    </definition>      
+    
+     <!-- Pastoral Pesquisa -->
+    <definition name="pastoral.pesquisa.tiles" extends="template.index">
+    		<put-attribute name="titlepanel"	value="Pastoral"/>
+        <put-attribute name="conteudo" 	value="/WEB-INF/jsp/pastoral/pastoralPesquisa.jsp"/>
+    </definition>             
+    
+</tiles-definitions>    
